@@ -2,7 +2,6 @@
 const crypto = require('node:crypto')
 const express = require('express')
 const cors = require('cors')
-const pico = require('picocolors')
 const movies = require('./movies.json')
 const { validateMovie, validatePartialMovie } = require('./schemas/movies')
 
@@ -156,6 +155,6 @@ app.listen(PORT, () => {
   console.log(`### Server is running on: ###
 #
 #
-  -> ${pico.blue(`http://localhost:${PORT}`)}
+  -> http://localhost:${PORT}
 #`)
 })
